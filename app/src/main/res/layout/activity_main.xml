@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="349dp"
+        android:layout_height="260dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="Display Image for App"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/currency" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="320dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/cardview_light_background"
+        android:ems="10"
+        android:hint="Please Enter The Amount in ($)"
+        android:inputType="number"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textColorHint="@android:color/tab_indicator_text"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="247dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/ic_launcher_background"
+        android:outlineAmbientShadowColor="@color/design_default_color_secondary"
+        android:shadowColor="@color/colorAccent"
+        android:text="CONVERT"
+        android:textColorHighlight="@color/cardview_shadow_end_color"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="253dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="32dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/design_default_color_on_secondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
